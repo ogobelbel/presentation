@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/moon.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section>
+					<h4>React is a declarative, efficient and flexible JavaScript library for building user interfaces.
+						It allows you to assemble complex UI from small, isolated pieces of code called "components".
+					</h4>
+					<img src="./examples/assets/reactmini.png" alt="">
+				</section>
+			</section>
+			<section>
+				<h2>What is it React?</h2>
+
+				<section data-transition="concave" data-auto-animate>
+					<p>React has a few different kinds of components, but we’ll start with React.Component subclasses:
+					</p>
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						class ShoppingList extends React.Component {
+							...
+						  }
+							</code></pre>
+				</section>
+				<section data-transition="concave" data-auto-animate>
+					<p>Here, ShoppingList is a React component class, or React component type. A component takes in
+						parameters, called props (short for “properties”), and returns a hierarchy of views to display
+						via the render method.</p>
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						class ShoppingList extends React.Component {
+							...
+						  }
+							</code></pre>
+				</section>
+				<section data-transition="concave" data-auto-animate>
+					<p style="font-size: 30px;">The render method returns a description of what you want to see on the
+						screen. React takes the
+						description and displays the result. In particular, render returns a React element, which is a
+						lightweight description of what to render.</p>
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						class ShoppingList extends React.Component {
+							render() {
+							 ...
+							}
+						  }
+							</code></pre>
+				</section>
+				<section data-transition="concave" data-auto-animate>
+					<p style="font-size: 30px;">Most React developers use a special syntax called “JSX” which makes
+						these structures easier to write. The 'div' syntax is transformed at build time to
+						React.createElement('div').</p>
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						class ShoppingList extends React.Component {
+							render() {
+							  return (
+								<div className="shopping-list">
+								  <h1>Список покупок для {this.props.name}</h1>
+								  <ul>
+									<li>Instagram</li>
+									<li>WhatsApp</li>
+									<li>Oculus</li>
+								  </ul>
+								</div>
+							  );
+							}
+						  }
+							</code></pre>
+				</section>
+				<section data-transition="concave">The ShoppingList component above only renders built-in DOM components
+					like 'div' and 'li'. But you can compose and render custom React components too. For example, we can
+					now refer to the whole shopping list by writing
+					'ShoppingList' Each React component is encapsulated and can operate independently; this allows
+					you to build complex UIs from simple components.
+
+				</section>
+
+
+			</section>
+			<section data-transition="zoom">
+				<h2>React Features</h2>
+				<section data-transition="concave">
+					<h3>JSX</h3>
+					JSX stands for JavaScript XML. It is a JavaScript syntax extension. Its an XML or HTML like syntax
+					used by ReactJS. This syntax is processed into JavaScript calls of React Framework. It extends the
+					ES6 so that HTML like text can co-exist with JavaScript react code. It is not necessary to use JSX,
+					but it is recommended to use in ReactJS.
+				</section>
+				<section data-transition="concave">
+					<h3>Components</h3>
+					ReactJS is all about components. ReactJS application is made up of multiple components, and each
+					component has its own logic and controls. These components can be reusable which help you to
+					maintain the code when working on larger scale projects.
+				</section>
+				<section data-transition="concave">
+					<h3>One-way Data Binding</h3>
+					<p style="font-size: 30px;">ReactJS is designed in such a manner that follows unidirectional data
+						flow or one-way data binding.
+						The benefits of one-way data binding give you better control throughout the application. If the
+						data
+						flow is in another direction, then it requires additional features. It is because components are
+						supposed to be immutable and the data within them cannot be changed. Flux is a pattern that
+						helps to
+						keep your data unidirectional. This makes the application more flexible that leads to increase
+						efficiency.</p>
+				</section>
+				<section>
+					<h3>Virtual DOM</h3>
+				<p style="font-size: 30px;">	A virtual DOM object is a representation of the original DOM object. It works like a one-way data
+					binding. Whenever any modifications happen in the web application, the entire UI is re-rendered in
+					virtual DOM representation. Then it checks the difference between the previous DOM representation
+					and new DOM. Once it has done, the real DOM will update only the things that have actually changed.
+					This makes the application faster, and there is no wastage of memory.</p>
+				</section>
+			</section>
+			<section data-transition="zoom"><h2>Advantages</h2>
+				<section>
+					<h4>1. Easy to Use.</h4>
+				
+					<img src="./examples/assets/easy_simple_pixel-hand_computer-pointer-100770206-large.jpg"
+						width="300px" alt="">
+				</section>
+				<section data-transition="concave">As a JavaScript developer, you will easily understand the basics of
+					React. And in just a few
+					days you can start developing your first application.</section>
+				<section data-transition="concave">
+				<h4 style="margin-top: 30px;">2. Supports Reusable Java Component</h4>
+					
+					<img src="./examples/assets/React-components-blog-image.jpg" width="300px" alt="">
+				</section>
+				<section data-transition="concave">
+					React allows you to reuse components that have been developed in other applications that use the
+					same function. The reusability of the component is a clear benefit to developers.
+				</section>
+				<section data-transition="concave">
+					<h4>3. Simple Writing Components</h4>
+				
+					<img src="./examples/assets/UI-Tree.png" alt="">
+				</section>
+				<section data-transition="concave">
+					<p style="font-size: 30px;">
+						The React component is easier to create because it uses JSX, an optional JavaScript syntax extension
+						that allows you to combine HTML with JavaScript.
+	
+						JSX is a great blend of JavaScript and HTML. It makes the whole process of writing the structure of
+						the site easier to understand. In addition, the extension also makes it much easier to render
+						multiple functions.
+	
+						While JSX may not be the most popular syntax extension, it has proven to be effective when
+						developing custom components or large applications.</p>
+				</section>
+				<section data-transition="concave">
+					<h4>4. Better Performance with Virtual DOM</h4>
+					
+					<img src="./examples/assets/articleocw-56bba37e791bc.png" width="300px" alt="">
+				</section>
+				<section data-transition="concave">
+					<p style="font-size: 30px;">React effectively updates the DOM (Document Object Model) process. As you probably already know,
+						this process can cause a lot of frustration when developing web applications. Fortunately, React
+						uses virtual DOMs, so you can avoid a lot of problems.
+	
+						The tool allows you to create virtual DOMs and place them in memory. As a result, every time there
+						is a change in the real DOM, the virtual one changes immediately.
+	
+						This system will prevent the actual DOM from forcing constant updates. As a result, the speed of
+						your application will not suffer.</p>
+				</section>
+				<section data-transition="concave">
+					<h4>5. SEO Friendly</h4>
+				
+					<img src="./examples/assets/seo.jpg" width="400px" alt="">
+				</section>
+				<section data-transition="concave">
+					<p style="font-size: 30px;">React allows you to create user interfaces that can be accessed from various search engines. This
+						feature is a huge benefit because not all JavaScript frameworks are SEO-optimized.
+	
+						Since React can speed up your application, it can also improve SEO results. Loading speed plays an
+						important role in SEO optimization.
+	
+						However, it's worth noting that React is just a JavaScript library. And therefore he cannot do
+						everything himself. You will have to use additional libraries for state management, routing and
+						communication.</p>
+				</section>
+			</section>
+			<section data-transition="zoom">
+				Conclusions
+				<section data-transition="concave">
+					<h4>1. React was created by Facebook.</h4>
+				</section>
+				<section data-transition="concave"><h4>2. It is used by many major brands and companies around the world.
+					React is a JavaScript library. However, it can also be categorized as a framework.</h4></section>
+				<section data-transition="concave"><h4>3. This framework cannot work alone, you need additional elements for
+					purposes such as routing,
+					control, etc.</h4></section>
+				<section data-transition="concave"><h4>4. React uses virtual DOM to provide the best optimization for your
+					page.</h4></section>
+				<section data-transition="concave"><h4>5. This framework is easy to use and SEO friendly.</h4></section>
+				<section data-transition="concave"><h4>6. Supports component reuse.</h4></section>
+				<section data-transition="concave"><h4>7. Uses the JSX extension, which is essentially a mix of HTML and
+					JavaScript.</h4>
+				</section>
+				<section data-transition="concave"><h4>8. React uses JSX to make it easier to create components, not because
+					it performs better.</h4></section>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
